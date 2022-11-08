@@ -1,0 +1,77 @@
+Git adding file and pushing file to Git Repository 
+
+ 1  sudo yum install git -y
+    2  mkdir d1
+    3  cd d1
+    4  vi f1
+    5  git init
+    6  git add f1
+    7  git commit -m "first commit"
+    8  cd
+    9  ssh-keygen
+   10  ls -la
+   11  cd .ssh
+   12  ls
+   13  cd id_rsa.pub
+   14  ls -la
+   15  cat id_rsa.pub
+   16  cd
+   17  ls
+   18  cd d1/
+   19  ls
+   20  git remote add origin git@github.com:Kavithamane/Git-Repo.git
+   21  git remote -v
+   22  git push -u origin master
+   23  history
+
+Cloning git to our own repository 
+
+24  git clone git@github.com:Kavithamane/Git-Repo.git
+   25  ls
+   26  cd Git-Repo/
+   27  ls
+   28  vi f1
+   29  cat f1
+   30  git add f1
+   31  git commit -m "second commit"
+   32  git remote -v
+   33  git remote add origin git@github.com:Kavithamane/Git-Repo.git
+   34  git push -u origin master
+   35  history
+
+Cloninig from Other Repository (https://github.com/nisarsgithub/ )
+
+   sudo yum update -y
+   sudo yum install git -y
+   mkdir d1
+   ls
+   ssh-keygen
+   ls
+   cd .ssh
+   ls
+   cat id_rsa.pub
+   cd
+   cd d1
+   ls
+   git init
+   ls
+   git clone git@github.com:nisarsgithub/petclinicscript.git
+   ls
+   cd petclinicscript/
+   ls
+   git add --all
+   git commit -m "script"
+   git remote -v
+   git remote rm origin
+   git remote -v
+   git remote add origin git@github.com:Kavithamane/petclinic-script.git
+   git push -u origin master
+   history
+
+Pull 
+
+
+
+
+
+
